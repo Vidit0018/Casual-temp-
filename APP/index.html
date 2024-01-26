@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>CodePen - Magic Navigation Menu Indicator</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div class="nav-container">
+			<div class="navigation">
+				<ul>
+					<li class="list active">
+						<a href="#" class="navbar-links active" onclick="display(1)" data-nav-link>
+							<span class="icon">
+								<ion-icon name="home-outline"></ion-icon>
+							</span>
+							<span class="text active" >Home</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="#" class="navbar-links" onclick="display(2)"data-nav-link>
+							<span class="icon">
+								<ion-icon name="person-outline"></ion-icon>
+							</span>
+							<span class="text">Profiles</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="#" class="navbar-links" onclick="display(3)" data-nav-link>
+							<span class="icon">
+								<ion-icon name="american-football-outline"></ion-icon> 
+							</span>
+							<span class="text">Venues</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="#" class="navbar-links" onclick="display(4)"data-nav-link>
+							<span class="icon">
+								<ion-icon name="image-outline"></ion-icon>
+							</span>
+							<span class="text">Photos</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="#" class="navbar-links" onclick="display(5)"data-nav-link>
+							<span class="icon">
+								<ion-icon name="settings-outline"></ion-icon>
+							</span>
+							<span class="text">Settings</span>
+						</a>
+					</li>
+					<div class="indicator"></div>
+				</ul>
+			</div>
+		</div>
+
+		<!-- partial -->
+		<div class="middle">
+			<div class="left">
+				<section class="app">
+					<aside class="sidebar">
+						<header>Sort Profiles</header>
+						<nav class="sidebar-nav">
+							<ul>
+								<li>
+									<a href="#"><i class="ion-bag"></i> <span>Sports →</span></a>
+									<ul class="nav-flyout">
+										<li>
+											<a href="#"
+												><i class="ion-ios-color-filter-outline"></i>Cricket</a
+											>
+										</li>
+										<li>
+											<a href="#"><i class="ion-ios-clock-outline"></i>Badminton</a>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-android-star-outline"></i>Football</a
+											>
+										</li>
+										<li>
+											<a href="#"><i class="ion-heart-broken"></i>Golf</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ion-ios-settings"></i>
+										<span class="">Location →</span></a
+									>
+									<ul class="nav-flyout">
+										<li>
+											<a href="#"><i class="ion-ios-alarm-outline"></i>Delhi</a>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-camera-outline"></i>Noida</a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-chatboxes-outline"></i>Gurugram</a
+											>
+										</li>
+										<li>
+											<a href="#"><i class="ion-ios-cog-outline"></i>Faridabad</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ion-ios-briefcase-outline"></i>
+										<span class="">Professionalism →</span></a
+									>
+									<ul class="nav-flyout">
+										<li>
+											<a href="#"><i class="ion-ios-flame-outline"></i>Amateur</a>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-lightbulb-outline"></i>Trained Athlete</a
+											>
+										</li>
+										
+									</ul>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ion-ios-analytics-outline"></i>
+										<span class="">Age Group →</span></a
+									>
+									<ul class="nav-flyout">
+										<li>
+											<a href="#"
+												><i class="ion-ios-timer-outline"></i>12-16</a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-arrow-graph-down-left"></i>17-20</a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-partlysunny-outline"></i>20-35</a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-timer-outline"></i>35-45</a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-game-controller-a-outline"></i>Above 45</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ion-ios-paper-outline"></i>
+										<span class="">Timings →</span></a
+									>
+									<ul class="nav-flyout">
+										<li>
+											<a href="#"
+												><i class="ion-ios-filing-outline"></i>Morning</a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-information-outline"></i>Evening</a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><i class="ion-ios-paperplane-outline"></i>Late Night</a
+											>
+										</li>
+										
+									</ul>
+								</li>
+								
+							</ul>
+						</nav>
+					</aside>
+				</section>
+			</div>
+			<div class="right">
+
+
+
+
+				
+		<!-- 
+
+				/////////////////////// Profiles //////////////////////////////////
+
+		 -->
+				
+        <article class="wrapper "  id="Profiles">
+					
+          <div class="row">
+						<div class="card">
+							<div class="imgBx">
+								<img src="./assets/player.png" />
+							</div>
+							<div class="details">
+								<h3>Mr. Tony Stark<br /><span>Athlete</span></h3>
+								<h4>Details</h4>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Nulla ducimus iusto.
+								</p>
+								<h4>Last Played</h4>
+								<ul class="size">
+									<li>02</li>
+									<li>10</li>
+									<li>15</li>
+									<li>23</li>
+									<li>29</li>
+								</ul>
+								<div class="group">
+									<h2><sup></sup>Delhi<small></small></h2>
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="imgBx">
+								<img src="./assets/player.png" />
+							</div>
+							<div class="details">
+								<h3>Mr. Tony Stark<br /><span>Athlete</span></h3>
+								<h4>Details</h4>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Nulla ducimus iusto.
+								</p>
+								<h4>Last Played</h4>
+								<ul class="size">
+									<li>02</li>
+									<li>10</li>
+									<li>15</li>
+									<li>23</li>
+									<li>29</li>
+								</ul>
+								<div class="group">
+									<h2><sup></sup>Delhi<small></small></h2>
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="imgBx">
+								<img src="./assets/player.png" />
+							</div>
+							<div class="details">
+								<h3>Mr. Tony Stark<br /><span>Athlete</span></h3>
+								<h4>Details</h4>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Nulla ducimus iusto.
+								</p>
+								<h4>Last Played</h4>
+								<ul class="size">
+									<li>02</li>
+									<li>10</li>
+									<li>15</li>
+									<li>23</li>
+									<li>29</li>
+								</ul>
+								<div class="group">
+									<h2><sup></sup>Delhi<small></small></h2>
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+          <div class="row">
+						<div class="card">
+							<div class="imgBx">
+								<img src="./assets/player.png" />
+							</div>
+							<div class="details">
+								<h3>Mr. Tony Stark<br /><span>Athlete</span></h3>
+								<h4>Details</h4>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Nulla ducimus iusto.
+								</p>
+								<h4>Last Played</h4>
+								<ul class="size">
+									<li>02</li>
+									<li>10</li>
+									<li>15</li>
+									<li>23</li>
+									<li>29</li>
+								</ul>
+								<div class="group">
+									<h2><sup></sup>Delhi<small></small></h2>
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="imgBx">
+								<img src="./assets/player.png" />
+							</div>
+							<div class="details">
+								<h3>Mr. Tony Stark<br /><span>Athlete</span></h3>
+								<h4>Details</h4>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Nulla ducimus iusto.
+								</p>
+								<h4>Last Played</h4>
+								<ul class="size">
+									<li>02</li>
+									<li>10</li>
+									<li>15</li>
+									<li>23</li>
+									<li>29</li>
+								</ul>
+								<div class="group">
+									<h2><sup></sup>Delhi<small></small></h2>
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="imgBx">
+								<img src="./assets/player.png" />
+							</div>
+							<div class="details">
+								<h3>Mr. Tony Stark<br /><span>Athlete</span></h3>
+								<h4>Details</h4>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Nulla ducimus iusto.
+								</p>
+								<h4>Last Played</h4>
+								<ul class="size">
+									<li>02</li>
+									<li>10</li>
+									<li>15</li>
+									<li>23</li>
+									<li>29</li>
+								</ul>
+								<div class="group">
+									<h2><sup></sup>Delhi<small></small></h2>
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+		
+        
+		</article>
+		
+		
+		<!-- 
+
+				/////////////////////// Home //////////////////////////////////
+
+		 -->
+
+		<article class="wrapper active"   id="home">
+			<div class="container">
+
+        <div class="profile-card">
+            <div class="profile-header"><!-- profile header section -->
+                <div class="main-profile">
+                    <div class="profile-image"></div>
+                    <div class="profile-names">
+                        <h1 class="username">Tony Stark</h1>
+                        <small class="page-title">Bohot Bada Khiladi</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-body"><!-- profile body section -->
+                <div class="profile-actions">
+                    <button class="follow">Follow</button>
+                    <button class="message">Message</button>
+                    <section class="bio">
+                        <div class="bio-header">
+                            <i class="fa fa-info-circle"></i>
+                            Your Bio
+                        </div>
+                        <p class="bio-text">
+                            Baingan .
+                        </p>
+                    </section>
+                </div>
+
+                <div class="account-info">
+                    <div class="data">
+                        <div class="important-data">
+                            <section class="data-item">
+                                <h3 class="value">104</h3>
+                                <small class="title">Friends</small>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">243</h3>
+                                <small class="title">Matches</small>
+                            </section>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">17</h3>
+                                <small class="title">Venues Booked</small>
+                            </section>
+                        </div>
+                        <div class="other-data">
+                            <section class="data-item">
+                                <h3 class="value">69</h3>
+                                <small class="title">Likes</small>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">65</h3>
+                                <small class="title">Comments</small>
+                            </section>
+                            <section class="data-item">
+                                <h3 class="value">2K</h3>
+                                <small class="title">Profile Views</small>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <span>Media Handles :</span>
+                        <a href="" class="media-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="media-link"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#" class="media-link"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#" class="media-link"><ion-icon name="logo-instagram"></ion-icon></i></a>
+                        <a href="#" class="media-link"><ion-icon name="logo-snapchat"></ion-icon></i></a>
+                    </div>
+
+                    <div class="last-post">
+                        <div class="post-cover">
+                            <span class="last-badge">Last Event</span>
+                        </div>
+                        <h3 class="post-title">Football Match</h3>
+                        <button class="post-CTA">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+		</article>
+		<article class="wrapper" id="venues">
+			<main class="container-venues">
+				
+				<section class="card-venues">
+					<div class="product-image-venues">
+					  <img src="assets/st1.png" height="250px" width="250px" alt="OFF-white Red Edition" draggable="false" />
+					</div>
+					<div class="product-info-venues">
+					  <h2>Sports Complex</h2>
+					  <p>The Best Sports facility in town</p>
+					  <div class="price-venues">$5</div>
+					</div>
+					<div class="btn-venues">
+					  <button class="buy-btn-venues">Book Now</button>
+					  <button class="fav-venues">
+						<svg class="svg-venues" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+						  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+						</svg>
+					  </button>
+					</div>
+				  </section>
+				  
+				<section class="card-venues">
+					<div class="product-image-venues">
+					  <img src="assets/st2.png" height="250px" width="250px" alt="OFF-white Red Edition" draggable="false" />
+					</div>
+					<div class="product-info-venues">
+					  <h2>Sports Complex</h2>
+					  <p>The Best Sports facility in town</p>
+					  <div class="price-venues">$5</div>
+					</div>
+					<div class="btn-venues">
+					  <button class="buy-btn-venues">Book Now</button>
+					  <button class="fav-venues">
+						<svg class="svg-venues" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+						  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+						</svg>
+					  </button>
+					</div>
+				  </section>
+				  
+				<section class="card-venues">
+					<div class="product-image-venues">
+					  <img src="assets/st3.png" height="250px" width="250px" alt="OFF-white Red Edition" draggable="false" />
+					</div>
+					<div class="product-info-venues">
+					  <h2>Sports Complex</h2>
+					  <p>The Best Sports facility in town</p>
+					  <div class="price-venues">$5</div>
+					</div>
+					<div class="btn-venues">
+					  <button class="buy-btn-venues">Book Now</button>
+					  <button class="fav-venues">
+						<svg class="svg-venues" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+						  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+						</svg>
+					  </button>
+					</div>
+				  </section>
+				  
+				<section class="card-venues">
+					<div class="product-image-venues">
+					  <img src="assets/st4.png" height="250px" width="250px" alt="OFF-white Red Edition" draggable="false" />
+					</div>
+					<div class="product-info-venues">
+					  <h2>Sports Complex</h2>
+					  <p>The Best Sports facility in town</p>
+					  <div class="price-venues">$5</div>
+					</div>
+					<div class="btn-venues">
+					  <button class="buy-btn-venues">Book Now</button>
+					  <button class="fav-venues">
+						<svg class="svg-venues" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+						  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+						</svg>
+					  </button>
+					</div>
+				  </section>
+				  
+				<section class="card-venues">
+					<div class="product-image-venues">
+					  <img src="assets/st1.png" height="250px" width="250px" alt="OFF-white Red Edition" draggable="false" />
+					</div>
+					<div class="product-info-venues">
+					  <h2>Sports Complex</h2>
+					  <p>The Best Sports facility in town</p>
+					  <div class="price-venues">$5</div>
+					</div>
+					<div class="btn-venues">
+					  <button class="buy-btn-venues">Book Now</button>
+					  <button class="fav-venues">
+						<svg class="svg-venues" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+						  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+						</svg>
+					  </button>
+					</div>
+				  </section>
+				  
+				<section class="card-venues">
+					<div class="product-image-venues">
+					  <img src="assets/st4.png" height="250px" width="250px" alt="OFF-white Red Edition" draggable="false" />
+					</div>
+					<div class="product-info-venues">
+					  <h2>Sports Complex</h2>
+					  <p>The Best Sports facility in town</p>
+					  <div class="price-venues">$5</div>
+					</div>
+					<div class="btn-venues">
+					  <button class="buy-btn-venues">Book Now</button>
+					  <button class="fav-venues">
+						<svg class="svg-venues" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+						  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+						</svg>
+					  </button>
+					</div>
+				  </section>
+				  
+				<section class="card-venues">
+					<div class="product-image-venues">
+					  <img src="assets/st1.png" height="250px" width="250px" alt="OFF-white Red Edition" draggable="false" />
+					</div>
+					<div class="product-info-venues">
+					  <h2>Sports Complex</h2>
+					  <p>The Best Sports facility in town</p>
+					  <div class="price-venues">$5</div>
+					</div>
+					<div class="btn-venues">
+					  <button class="buy-btn-venues">Book Now</button>
+					  <button class="fav-venues">
+						<svg class="svg-venues" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+						  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+						</svg>
+					  </button>
+					</div>
+				  </section>
+				  
+				
+				
+			  </main>
+		</article>
+		<article class="wrapper"  id="other">
+			<div class="home"></div>
+		</article>
+
+		</div>
+
+		<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
